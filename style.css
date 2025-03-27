@@ -1,0 +1,18 @@
+html {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+#mainContent {
+    display: flex;
+}
+
+.sketchBox, .sketchBoxCol {
+    border: 1px solid grey;
+    padding: 20px;
+}
+
+.sketchBoxCol {
+    display: flex;
+    flex-direction: column;
+}
