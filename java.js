@@ -1,35 +1,21 @@
-const mainContent = document.querySelector("#mainContent");
-const content = document.createElement("div");
+const mainContent = document.querySelector("#container");
+const userInput = prompt("How many boxes?");
 
-const numRows = prompt("How many rows would you like?")
-
-
-
-function drawBox(numRows) {
-    for (i = 0; i < numRows; i++) {
-    content.classList.add("content")
-    mainContent.appendChild(content);
-    console.log(i);
-    };
-};
-
-function drawColumns(numRows) {
-    for (i = 0; i < numRows; i++) {
-        const column = document.createElement("div");
-        column.classList.add("sketchBoxCol");
-        content.appendChild(column);
+function drawBox(userInput) {
+    for (i = 0; i < userInput; i++){
+        const rowBox = document.createElement("div");
+        rowBox.classList.add("boxes");
+        mainContent.appendChild(rowBox);
+            for (j = 0; j < userInput; j++){
+                const colBox = document.createElement("div");
+                colBox.classList.add("boxes2");
+                rowBox.appendChild(colBox);
+            }
     }
 };
 
-function drawRows(numRows) {
-    for (i = 0; i < numRows; i++) {
-        const sketchBox = document.createElement("div");
-        sketchBox.classList.add("sketchBox");
-        mainContent.appendChild(sketchBox);
-    }};
-        
+drawBox(userInput);
 
-drawBox(numRows);
-drawColumns(numRows);
-drawRows(numRows);
+const box = document.querySelector("div");
 
+box.onmouseover
