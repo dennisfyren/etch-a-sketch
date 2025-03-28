@@ -6,12 +6,21 @@
 
 body {
     justify-items: center;
+    background-color: rgb(70, 70, 70);
+}
+
+#resetButton {
+    font-size: large;
+    border-radius: 15px;
+    height: 3em;
+    width: 5em;
+    margin-top: 15px;
 }
 
 #container {
     display: flex;
     flex-direction: column;
-    margin-top: 5%;
+    margin-top: 2%;
     height: 800px;
     width: 800px;
     border: 2px solid black;
@@ -26,4 +35,8 @@ body {
 .boxes2 {
     border: 1px solid gray;
     flex: 1;
+}
+
+.boxes2-hover {
+    background: rgb(148, 148, 148);
 }
