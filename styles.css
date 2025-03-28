@@ -33,10 +33,14 @@ body {
 }
 
 .boxes2 {
-    border: 1px solid gray;
     flex: 1;
+    
 }
 
-.boxes2-hover {
-    background: rgb(148, 148, 148);
+.boxes-hover {
+    background: rgb(0, 0, 0);
+}
+
+.button-hover {
+    background: rgb(211, 209, 209);
 }
